@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "dvapp111_backend": {
+      "main": "src/dvapp111_backend/main.mo",
+      "type": "motoko"
+    },
+    "dvapp111_frontend": {
+      "dependencies": [
+        "dvapp111_backend"
+      ],
+      "source": [
+        "src/dvapp111_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dvapp111_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
